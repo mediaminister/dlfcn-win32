@@ -272,7 +272,7 @@ void *dlopen( const char *file, int mode )
              * to UNIX's search paths (start with system folders instead of current
              * folder).
              */
-            hModule = LoadLibraryExA( lpFileName, NULL, LOAD_WITH_ALTERED_SEARCH_PATH );
+            hModule = LoadLibraryExW( lpFileName, NULL, LOAD_WITH_ALTERED_SEARCH_PATH );
 
             if( !hModule )
             {
